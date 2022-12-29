@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<web-app>  
+  
+<servlet>  
+<servlet-name>test</servlet-name>  
+<servlet-class>test</servlet-class>  
+</servlet>
+<servlet>
+	<description>
+	</description>
+	<display-name>test1</display-name>
+	<servlet-name>test1</servlet-name>
+	<servlet-class>com.unique.test</servlet-class>
+</servlet>
+<servlet>
+	<description>
+	</description>
+	<display-name>firstServlet</display-name>
+	<servlet-name>firstServlet</servlet-name>
+	<servlet-class>com.unique.apps.firstServlet</servlet-class>
+</servlet>
+<servlet>
+	<description>
+	</description>
+	<display-name>db</display-name>
+	<servlet-name>db</servlet-name>
+	<servlet-class>com.unique.apps.main.db</servlet-class>
+</servlet>
+<servlet>
+	<description>
+	</description>
+	<display-name>delete</display-name>
+	<servlet-name>delete</servlet-name>
+	<servlet-class>com.unique.apps.main.delete</servlet-class>
+</servlet>  
+  
+<servlet-mapping>  
+<servlet-name>test</servlet-name>  
+<url-pattern>/test</url-pattern>  
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>test1</servlet-name>
+	<url-pattern>/test1</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>firstServlet</servlet-name>
+	<url-pattern>/firstServlet</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>db</servlet-name>
+	<url-pattern>/db</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>delete</servlet-name>
+	<url-pattern>/delete</url-pattern>
+</servlet-mapping>  
+  
+</web-app>  
