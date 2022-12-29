@@ -13,3 +13,5 @@ bin
 .settings
 .metadata
 .gitattributes
+.build.gradle.swp
+
