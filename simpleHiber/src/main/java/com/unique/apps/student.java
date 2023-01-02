@@ -1,7 +1,13 @@
 package com.unique.apps;
 
-public class student {
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
+@Entity	
+@Table(name= "stbl")   
+public class student {
+	@Id   
 	private int id;
 	private String fname,lname;
 	

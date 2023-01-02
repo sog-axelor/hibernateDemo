@@ -12,7 +12,11 @@
         <property name="hibernate.connection.username">axelor</property>  
         <property name="hibernate.connection.password">axelor</property>  
         <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>  
-    <mapping resource="student.hbm.xml"/>  
+        
+        <mapping class="com.unique.apps.student"/>  
+   
     </session-factory>  
   
 </hibernate-configuration>  
+
+
