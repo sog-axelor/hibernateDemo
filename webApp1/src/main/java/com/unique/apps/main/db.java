@@ -44,7 +44,7 @@ public class db extends HttpServlet {
 		PrintWriter pw=response.getWriter();//get the stream to write the data  
 		  
 		pw.println("<html><body align='center'>");  
-		pw.println("<h1>Welcome to Registeration Form</h1>");  
+		pw.println("<h1>Welcome to  Registeration Form</h1>");  
 		pw.print("<form action='' method='post' > ");
 		pw.print("<input type='text' name='fname' placeholder='First Name'> &nbsp; ");
 		pw.print("<input type='text' name='lname' placeholder='Last Name'> &nbsp; ");
@@ -55,6 +55,7 @@ public class db extends HttpServlet {
 		 SessionFactory factory = meta.getSessionFactoryBuilder().build();  
 		 Session session = factory.openSession();  
 		 Transaction t = session.beginTransaction();  
+		 
 		Query query = session.createQuery("FROM Employee");
 		List<Employee> emp = query.list();
 		
@@ -76,7 +77,7 @@ public class db extends HttpServlet {
 		pw.print("<td><a href='delete?id="+empObj.getId()+"'>Delete</a></td>");
 		pw.print("</tr>");
 		}
-		
+			
 		pw.print("</tbody>");
 		pw.print("<table>");
 		pw.println("</h1>");
