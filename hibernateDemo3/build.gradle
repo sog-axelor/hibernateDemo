@@ -4,3 +4,17 @@
  * This is a general purpose Gradle build.
  * Learn more about Gradle by exploring our samples at https://docs.gradle.org/7.2/samples
  */
+
+
+ apply plugin: 'java'
+apply plugin: 'application'
+apply plugin: 'eclipse'
+
+repositories{
+	mavenCentral()
+}
+
+dependencies{
+	implementation 'org.hibernate:hibernate-core:5.6.6.Final'
+	implementation 'org.postgresql:postgresql:42.2.2'	
+}
